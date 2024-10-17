@@ -14,7 +14,7 @@ body {
     color: #0d0d0d;
     padding: 20px;
     min-height: 100vh;
-    overflow-x: hidden; /* Prevent horizontal scroll due to potential layout issues */
+    /* Prevent horizontal scroll due to potential layout issues */
 }
 /* Overlay for the semi-transparent effect */
 body::before {
@@ -24,7 +24,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.4); /* Adjust transparency for effect */
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust transparency for effect */
     z-index: -1; /* Keep the overlay behind the main content */
 }
 /* Cart Header Section */
@@ -51,6 +51,7 @@ h1 {
 /* Cart Header Alignment */
 .cart-header {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-columns: 2fr 1fr 1fr 1fr; /* Four equal columns for alignment */
     text-align: center;
     background-color: transparent;
@@ -169,3 +170,4 @@ h1 {
     height: 20px;
     margin-right: 10px;
 }
+
