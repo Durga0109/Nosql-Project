@@ -51,3 +51,36 @@ body, html {
 .navbar a:hover {
     text-decoration: underline;
 }
+/* Responsive styling for mobile */
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Hide menu on small screens */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show hamburger menu on small screens */
+    }
+}
+.navbar-menu.open {
+    display: block; /* Show menu items on small screens when clicked */
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-items li {
+        margin: 10px 0;
+    }
+}

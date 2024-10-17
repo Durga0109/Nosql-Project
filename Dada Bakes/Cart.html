@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dadaa Bakes - Cart</title>
     <link rel="stylesheet" href="cart.css">
-    <link rel="stylesheet" href="header-styles.css"> <!-- Link to the header-specific CSS file -->
+    <link rel="stylesheet" href="header-styles.css">
 </head>
 <body>
 
@@ -14,11 +14,7 @@
     <div id="header"></div>
 
     <script>
-        // Use JavaScript to load the header content to maintain consistency across pages
         document.getElementById('header').innerHTML = `
-            <!-- User Account Icon -->
-
-            <!-- Header and Navigation Bar -->
             <div class="header">
                 <nav class="navbar">
                     <ul>
@@ -46,7 +42,7 @@
 
     <!-- Cart Items Section -->
     <div class="cart-container">
-        <!-- First item: Brownie -->
+        <!-- Cart Item Template -->
         <div class="cart-item">
             <div class="item-details">
                 <img src="images/brownie.jpeg" alt="Brownie">
@@ -60,43 +56,13 @@
             </div>
             <div class="item-total">Rs. 250</div>
         </div>
-
-        <!-- Second item: Cupcake -->
-        <div class="cart-item">
-            <div class="item-details">
-                <img src="images/cupcake.jpeg" alt="Cupcake">
-                <span class="item-name">Cupcake</span>
-            </div>
-            <div class="item-info">Rs. 150</div>
-            <div class="quantity-control">
-                <button class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
-                <span class="quantity">1</span>
-                <button class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
-            </div>
-            <div class="item-total">Rs. 150</div>
-        </div>
-
-        <!-- Third item: Cookies -->
-        <div class="cart-item">
-            <div class="item-details">
-                <img src="images/cookies.jpeg" alt="Cookies">
-                
-                <span class="item-name">Cookies</span>
-            </div>
-            <div class="item-info">Rs. 100</div>
-            <div class="quantity-control">
-                <button class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
-                <span class="quantity">2</span>
-                <button class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
-            </div>
-            <div class="item-total">Rs. 200</div>
-        </div>
+        <!-- Repeat for other items -->
     </div>
-<!-- Grand Total Section -->
-<div class="grand-total-container">
-    <div class="grand-total">Grand Total: Rs. 0</div>
-</div>
 
+    <!-- Grand Total Section -->
+    <div class="grand-total-container">
+        <div class="grand-total">Grand Total: Rs. 0</div>
+    </div>
 
     <!-- Buy Now Section -->
     <div class="buy-now">

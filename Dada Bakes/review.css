@@ -27,6 +27,17 @@ body::before {
     height: 100%;
     z-index: -1; /* Keep the overlay behind the main content */
 }
+.title-section {
+    position: absolute; /* Allows precise positioning */
+    top: 3%; /* Adjust the vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset to keep the section centered */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Optional padding for better spacing */
+ /* Optional background */
+    z-index: 2; /* Ensure it appears above other elements */
+}
+
 
 /* Overlay for the semi-transparent effect */
 
@@ -41,28 +52,6 @@ body::before {
     z-index: 1; /* Ensures the navbar stays above the background image */
 }
 
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li {
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    color: #070707; /* White color for navbar links */
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: color 0.3s ease;
-}
-
-.navbar ul li a:hover {
-    color: #ffcc00; /* Highlighted text color on hover */
-}
 
 /* Content Styles */
 main {
