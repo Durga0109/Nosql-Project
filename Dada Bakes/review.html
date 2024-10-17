@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dadaa Bakes - Reviews</title>
+    <link rel="stylesheet" href="review.css"> <!-- Link to your review-specific CSS file -->
+    <link rel="stylesheet" href="header-styles.css"> <!-- Link to the header-specific CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header"></div>
+     <!-- Full Background Image -->
+     <div class="bg-image"></div>
+
+
+    <script>
+        // Use JavaScript to load the header content for consistent navigation
+        document.getElementById('header').innerHTML = `
+            <div class="user-account">
+                <img src="images/profile logo.png" alt="User Account">
+            </div>
+            <div class="header">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="review.html">Review</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        `;
+    </script>
+
+    <!-- Main Content -->
+    <main>
+        <div class="content-section">
+            <div class="title-section">
+                <h1>Listen to Our Customers</h1>
+                <p>Savor the Sweetest Feedback! Discover why our desserts leave a lasting impression in every bite.</p>
+            </div>
+
+            <!-- Review Section -->
+            <div class="reviews">
+                <!-- Review 1 -->
+                <div class="review-item">
+                    <img src="images/reviewer1.jpg" alt="Reviewer 1">
+                    <div class="review-content">
+                        <h3>Emily Johnson</h3>
+                        <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                        <p>The desserts are heavenly! Every bite melts in your mouth. Highly recommend!</p>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-item">
+                    <img src="images/reviewer2.jpg" alt="Reviewer 2">
+                    <div class="review-content">
+                        <h3>Michael Smith</h3>
+                        <div class="star-rating">⭐⭐⭐⭐</div>
+                        <p>Absolutely delicious! The brownie is my favorite. Will definitely order again!</p>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-item">
+                    <img src="images/reviewer3.jpg" alt="Reviewer 3">
+                    <div class="review-content">
+                        <h3>Sarah Williams</h3>
+                        <div class="star-rating">⭐⭐⭐⭐⭐</div>
+                        <p>Amazing taste and great service! The cupcakes are a must-try!</p>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review-item">
+                    <img src="images/reviewer4.jpg" alt="Reviewer 4">
+                    <div class="review-content">
+                        <h3>David Brown</h3>
+                        <div class="star-rating">⭐⭐⭐⭐</div>
+                        <p>The cookies were perfect. Just the right amount of sweetness!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script> <!-- Link to your main JavaScript file -->
+</body>
+</html>

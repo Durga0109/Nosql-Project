@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dadaa Bakes - Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="header-styles.css"> <!-- Link to the header-specific CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header"></div>
+
+    <script>
+        // Use JavaScript to load the header content to maintain consistency across pages
+        document.getElementById('header').innerHTML = `
+            <!-- User Account Icon -->
+
+            <!-- Header and Navigation Bar -->
+            <div class="header">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="review.html">Review</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        `;
+    </script>
+
+    <!-- Cart Header Section -->
+    <header>
+        <br><h1>Your Cart</h1>
+        <div class="cart-header">
+            <span class="header-title">Items</span>
+            <span class="header-title">Price</span> 
+            <span class="header-title">Quantity</span>
+            <span class="header-title">Total</span>
+        </div>
+    </header>
+
+    <!-- Cart Items Section -->
+    <div class="cart-container">
+        <!-- First item: Brownie -->
+        <div class="cart-item">
+            <div class="item-details">
+                <img src="images/brownie.jpeg" alt="Brownie">
+                <span class="item-name">Brownie</span>
+            </div>
+            <div class="item-info">Rs. 250</div>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+            </div>
+            <div class="item-total">Rs. 250</div>
+        </div>
+
+        <!-- Second item: Cupcake -->
+        <div class="cart-item">
+            <div class="item-details">
+                <img src="images/cupcake.jpeg" alt="Cupcake">
+                <span class="item-name">Cupcake</span>
+            </div>
+            <div class="item-info">Rs. 150</div>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+            </div>
+            <div class="item-total">Rs. 150</div>
+        </div>
+
+        <!-- Third item: Cookies -->
+        <div class="cart-item">
+            <div class="item-details">
+                <img src="images/cookies.jpeg" alt="Cookies">
+                
+                <span class="item-name">Cookies</span>
+            </div>
+            <div class="item-info">Rs. 100</div>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                <span class="quantity">2</span>
+                <button class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+            </div>
+            <div class="item-total">Rs. 200</div>
+        </div>
+    </div>
+<!-- Grand Total Section -->
+<div class="grand-total-container">
+    <div class="grand-total">Grand Total: Rs. 0</div>
+</div>
+
+
+    <!-- Buy Now Section -->
+    <div class="buy-now">
+        <button class="buy-btn">
+            <img src="images/cartbasket.jpg" alt="Cart Icon"> Buy Now!
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

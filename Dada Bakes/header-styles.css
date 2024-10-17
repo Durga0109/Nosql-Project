@@ -1,0 +1,53 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* User Account Icon */
+.user-account {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* .user-account img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: inherit;
+    z-index: 3;
+} */
+
+/* Header and Navigation Bar Styles */
+.header {
+    background-color: rgba(252, 251, 251, 0.7); /* Semi-transparent background */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Small shadow for separation */
+    position: sticky; /* Keeps the navigation bar at the top */
+    top: 0; /* Sticks to the top of the viewport */
+    width: 100%;
+    z-index: 2; 
+}
+
+/* Navbar styles */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex; /* Aligns items horizontally */
+    gap: 20px;
+}
+
+.navbar a {
+    color: rgb(9, 9, 9);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}

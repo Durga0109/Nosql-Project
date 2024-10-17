@@ -1,0 +1,170 @@
+/* Basic reset for consistent styling */
+body, h1, div, img, button, span {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Overall page styling */
+body {
+    font-family: Arial, sans-serif;
+    position: relative; /* Ensure relative positioning for proper stacking of ::before pseudo-element */
+    background-color:rgb(202, 157, 190);
+    background-size: cover;
+    color: #0d0d0d;
+    padding: 20px;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll due to potential layout issues */
+}
+/* Overlay for the semi-transparent effect */
+body::before {
+    content: "";
+    position: fixed; /* Fixed position to keep the overlay in place during scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust transparency for effect */
+    z-index: -1; /* Keep the overlay behind the main content */
+}
+/* Cart Header Section */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 0 5px;
+    background-color: rgb(242, 162, 182);
+}
+
+h1 {
+    font-size: 30px;
+    color: #fffafa;
+    margin-bottom: 10px;
+}
+
+/* Cart Header Alignment */
+.cart-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr; /* Four equal columns for alignment */
+    text-align: center;
+    background-color: transparent;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1); 
+    font-weight: bold;
+}
+
+/* Cart Items Section */
+.cart-container {
+    display: grid;
+    gap: 15px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr; /* Proportional columns for items */
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Item Details Section */
+.item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-details img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.item-name, .item-info, .quantity-control, .item-total {
+    display: inline-block; /* Ensure the size fits the content */
+    padding: 5px 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #ddd;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin: 0 auto; /* Center the box */
+}
+.item-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px; /* Add some space between the image and the name */
+    text-align: center;
+}
+
+/* Quantity Control Section */
+.quantity-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-btn {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.quantity {
+    padding: 5px 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+/* Grand Total Section */
+.grand-total-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0;
+    margin-top: 10px;
+    border-top: 2px solid #ccc;
+}
+
+.grand-total {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff4500; /* Change color of the grand total to a distinct red */
+    margin-right: 30px;
+}
+
+/* Buy Now Button */
+.buy-now {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buy-btn {
+    padding: 10px 20px;
+    background-color: #f7dc6f;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.buy-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}

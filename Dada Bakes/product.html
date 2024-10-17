@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dadaa Bakes - Products</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="header-styles.css"> <!-- Link to the header-specific CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header"></div>
+
+    <script>
+        // Load the header content using JavaScript to maintain consistency across pages
+        document.getElementById('header').innerHTML = `
+
+            <!-- Header and Navigation Bar -->
+            <div class="header">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="review.html">Review</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        `;
+    </script>
+
+    <!-- Content Section -->
+    <header>
+        <h1>Welcome to Dadaa Bakes</h1>
+    </header>
+
+
+    <div class="product-list">
+        <!-- Product 1 -->
+        <div class="product-item">
+            <img src="images/brownie.jpeg" alt="Brownie">
+            <h2>Brownie</h2>
+            <p>Price: Rs. 250</p>
+            <button onclick="addToCart('Brownie', 250, 'images/brownie.jpeg')">Add to Cart</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-item">
+            <img src="images/cupcake.jpeg" alt="Cupcake">
+            <h2>Cupcake</h2>
+            <p>Price: Rs. 150</p>
+            <button onclick="addToCart('Cupcake', 150, 'images/cupcake.jpeg')">Add to Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-item">
+            <img src="images/cookies.jpeg" alt="Cookies">
+            <h2>Cookies</h2>
+            <p>Price: Rs. 100</p>
+            <button onclick="addToCart('Cookies', 100, 'images/cookies.jpeg')">Add to Cart</button>
+        </div>
+        <!-- Add more products -->
+        <div class="product-item">
+            <img src="images/muffins.jpeg" alt="Muffin">
+            <h2>Muffins</h2>
+            <p>Price: Rs. 200</p>
+            <button onclick="addToCart('Muffin', 200, 'images/muffins.jpeg')">Add to Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="images/cheesepudding.jpg" alt="cheesepudding">
+            <h2>Cheese Pudding</h2>
+            <p>Price: Rs. 180</p>
+            <button onclick="addToCart('cheesepudding', 180, 'images/cheesepudding.jpg')">Add to Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="images/macroon.jpg" alt="Macroon">
+            <h2>Macaroon</h2>
+            <p>Price: Rs. 220</p>
+            <button onclick="addToCart('Macroon', 220, 'images/macroon.jpg')">Add to Cart</button>
+        </div>
+    </div>
+
+    <a href="cart.html" class="view-cart">View Cart</a>
+
+    <script src="script.js"></script>
+    <script>
+        // Call the function to load cart items when the page loads
+        window.onload = loadCartItems;
+    </script>
+</body>
+</html>
